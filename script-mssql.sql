@@ -93,6 +93,8 @@ ALTER TABLE ratings ADD CONSTRAINT rating_movies
 ALTER TABLE ratings ADD CONSTRAINT rating_reviewers
     FOREIGN KEY (reviewer_id)
     REFERENCES reviewers (id);
+    select titulo from movies
+    where genre_id = 'drama'
 
 -- End of file.
 
